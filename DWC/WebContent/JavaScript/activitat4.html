@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Activitat 4</title>
+</head>
+<body>
+<script type="text/javascript">
+var squarelenght=prompt('Introduiex la longitut del quadrat:','');
+var num1=prompt('Introduiex un numero:','');
+var num2=prompt('Introduiex un altre numero:','');
+var num3=prompt('Introduiex un cop mes un altre numero:','');
+var num4=prompt('Introduiex un darrero numero:','');
+var product1price=prompt('Introdueix el preu del primer producte:','');
+var product1quantity=prompt('Introduiex la quantitat del primer producte:','');
+var product2price=prompt('Introdueix el preu del segon producte:','');
+var product2quantity=prompt('Introduiex la quantitat del segon producte:','');
+var trianglebase=prompt('Introduiex la base del triangle:','');
+var triangleheight=prompt('Introduiex l"altura del triangle:','');
+var squareperimeter=squarelenght*4
+document.write('<b>Perimetre del quadrat=</b> '+squareperimeter+' <br>');
+document.write('<br><b>'+num1+'+'+num2+'+'+num3+'+'+num4+'=</b> '+(num1+num2+num3+num4)+' <br>');
+document.write('<b>'+num1+'*'+num2+'*'+num3+'*'+num4+'=</b> '+(num1*num2*num3*num4)+' <br>');
+document.write('<br><table><tr><th>Producte</th><th>Preu</th><th>Quantitat</th><th>Subtotal</th></tr><tr><td>Producte 1</td><td>'+product1price+'&#8364;</td><td>x'+product1quantity+'</td><td>'+(product1price*product1quantity)+'&#8364;<td></tr> <tr><td>Producte 2</td><td>'+product2price+'&#8364;</td><td>x'+product2quantity+'</td><td>'+(product1price*product2quantity)+'&#8364;<td></tr> <tr><th>Total</th><td>'+((product1price*product1quantity)+(product2price*product2quantity))+'&#8364;</td></tr></table>');
+var trianglearea=(trianglebase*triangleheight)/2
+document.write('<br><b>Area del triangle:</b> '+trianglearea+' <br>');
+
+ </script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Activitat 9</title>
+</head>
+<body>
+<script type="text/javascript">
+var paraula=prompt('Introdueix una de les següents paraules (casa, taula, ca, moix):','');
+var mes1=prompt('Introdueix un numero de 1 a 12:','');
+var mes2=prompt('Introdueix un altre numero de 1 a 12:','');
+var lletra=prompt('Introdueix una lletra','');
+paraula=paraula.toLowerCase()
+lletra=lletra.toLowerCase()
+mes1=parseInt(mes1);
+mes2=parseInt(mes2);
+
+switch (paraula) { 
+case 'casa': document.write('House<br>'); 
+break; 
+case 'taula': document.write('Table<br>'); 
+break; 
+case 'ca': document.write('Dog<br>'); 
+break; 
+case 'moix': document.write('Cat<br>'); 
+break;
+}
+
+switch (mes1) { 
+case 1: document.write('<br>Gener<br>'); 
+break; 
+case 2: document.write('<br>Febrer<br>'); 
+break; 
+case 3: document.write('<br>Març<br>'); 
+break; 
+case 4: document.write('<br>Abril<br>'); 
+break; 
+case 5: document.write('<br>Maig<br>'); 
+break; 
+case 6: document.write('<br>Juny<br>'); 
+break; 
+case 7: document.write('<br>Juliol<br>'); 
+break; 
+case 8: document.write('<br>Agost<br>'); 
+break; 
+case 9: document.write('<br>Setembre<br>'); 
+break; 
+case 10: document.write('<br>Octubre<br>'); 
+break; 
+case 11: document.write('<br>Novembre<br>'); 
+break; 
+case 12: document.write('<br>Desembre<br>'); 
+break;
+}
+
+switch (mes2) { 
+case 1: document.write('<br>31<br>'); 
+break; 
+case 2: document.write('<br>28<br>'); 
+break; 
+case 3: document.write('<br>30<br>'); 
+break; 
+case 4: document.write('<br>30<br>'); 
+break; 
+case 5: document.write('<br>31<br>'); 
+break; 
+case 6: document.write('<br>30<br>'); 
+break; 
+case 7: document.write('<br>31<br>'); 
+break; 
+case 8: document.write('<br>31<br>'); 
+break; 
+case 9: document.write('<br>30<br>'); 
+break; 
+case 10: document.write('<br>31<br>'); 
+break; 
+case 11: document.write('<br>30<br>'); 
+break; 
+case 12: document.write('<br>31<br>'); 
+break;
+}
+
+if ((lletra == 'a') || (lletra == 'e') || (lletra == 'i') || (lletra == 'o') || (lletra == 'u')){
+	document.write('<br>Vocal')
+} else {
+	document.write('<br>Consonant')	
+}
+</script>
+</body>
+</html>

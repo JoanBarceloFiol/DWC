@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Activitat 5</title>
+</head>
+<body>
+<script type="text/javascript">
+var name=prompt('Introduiex el teu nom:','');
+var exam1=prompt('Introduiex la nota del primer examen:','');
+var exam2=prompt('Introduiex la nota del segon examen:','');
+var exam3=prompt('Introduiex la nota del tercer examen:','');
+var email=prompt('Introduiex el teu correu:','');
+var emailrepeat=prompt('Introdueix el correu:','');
+var age=prompt('Introduiex la teva edat','');
+var num=prompt('Introdueix un numero:','');
+if (((exam1+exam3+exam3)/3) >= 5){
+	document.write('Enhorabona '+name+', has aprobat!<br>');
+}
+if (email === emailrepeat){
+	document.write('<br>Els correus coincideixen<br>');
+}
+if (num%2 == 0){
+	document.write('<br>El numero es par<br>');
+}
+if (age >= 18){
+	document.write('<br>Tens edat per treballar<br>');
+}
+ </script>
+</body>
+</html>

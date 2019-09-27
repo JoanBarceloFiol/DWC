@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Activitat 7</title>
+</head>
+<body>
+<script type="text/javascript">
+var num1=prompt('Introdueix un numero:','');
+var num2=prompt('Introdueix un altre numero:','');
+var num3=prompt('Introdueix un darrer numero:','');
+var num4=prompt('Introdueix un numero entre 0 i 999:','');
+var num5=prompt('Introduiex numero enter:','');
+
+if ((num1 >= num2) && (num1 >= num3)){
+	document.write('<b>Max: </b>'+num1+'<br>');
+} else {
+	if (num2 >= num3){
+		document.write('<b>Max: </b>'+num2+'<br>');
+	} else {
+		document.write('<b>Max: </b>'+num3+'<br>');
+	}
+}
+if ((num1 <= num2) && (num1 <= num3)){
+	document.write('<b>Max: </b>'+num1+'<br>');
+} else {
+	if (num2 <= num3){
+		document.write('<b>Max: </b>'+num2+'<br>');
+	} else {
+		document.write('<b>Max: </b>'+num3+'<br>');
+	}
+}
+if (num4 > 99){
+	document.write('<br>El numero te 3 xifres<br>');
+} else {
+	if (num4 > 9){
+		document.write('<br>El numero te 2 xifres<br>');
+	} else {
+		document.write('<br>El numero te 1 xifra<br>');
+	}
+}
+if (num5 == 0){
+	document.write('<brCero');
+} else {
+	if (num5 > 0){
+		document.write('<b>Numero Positiu');
+	} else {
+		document.write('<b>Numero Negatiu');
+	}
+}
+ </script>
+</body>
+</html>

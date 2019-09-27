@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Activitat 8</title>
+</head>
+<body>
+<script type="text/javascript">
+var dia=prompt('Introdueix el dia (dd):','');
+var mes=prompt('Introdueix el mes (mm):','');
+var any=prompt('Introdueix l"any (yyyy):','');
+var num1=prompt('Introduiex un numero:','');
+var num2=prompt('Introduiex un altre numero:','');
+var num3=prompt('Introduiex un cop mes un altre numero:','');
+var y=prompt('Introdueix un valor per la cordenada y:','');
+var x=prompt('Introdueix un valor per la cordenada x:','');
+var salari=prompt('Introduiex el salari:','');
+var anys=prompt('Introduiex el numero d"anys que ha estattreballant a l"empresa:','');
+if ((any == (new Date().getFullYear())) && (mes == 12) && (dia == 25)){
+	document.write('Today is Christmas!<br>'); 
+}
+if ((num1 < 10) && (num2 < 10) && (num3 < 10)){
+	document.write('<br>All the numbers are less than 10<br>');
+}
+if ((num1 < 10) || (num2 < 10) || (num3 < 10)){
+	document.write('<br>Some numbers are less than 10<br>');
+}
+if ((x > 0) && (y > 0)){
+	document.write('<br>First Quadrant<br>');
+}
+if ((x < 0) && (y > 0)){
+	document.write('<br>Second Quadrant<br>');
+}
+if ((x < 0) && (y < 0)){
+	document.write('<br>Third Quadrant<br>');
+}
+if ((x > 0) && (y < 0)){
+	document.write('<br>Fourth Quadrant<br>');
+}
+if (salari < 500){
+	if (anys >= 10){
+		document.write('<br>'+(salari*1.20)+'&#8364;<br>');
+	} else {
+		document.write('<br>'+(salari*1.05)+'&#8364;<br>');
+	}
+} else {
+	document.write('<br>'+salari+'&#8364;<br>');
+}
+
+</script>
+</body>
+</html>
