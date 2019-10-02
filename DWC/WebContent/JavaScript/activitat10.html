@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Activitat 10</title>
+</head>
+<body>
+<script type="text/javascript">
+for (var x = 1; x <= 50; x++){
+	document.write(x+' ');	
+}
+document.write('<br>')
+for (var x = 50; x >= 1; x--){
+	document.write(x+' ');	
+}
+document.write('<br>')
+for (var x = -50; x <= 0; x++){
+	document.write(x+' ');	
+}
+document.write('<br><br>')
+for (var x = 1; x <= 100; x++){
+	if(x%2==0){
+		document.write(x+' ');	
+	}
+}
+document.write('<br><br>')
+for (var x = 1; x <= 25; x++){
+	document.write((x*11)+' ');	
+}
+document.write('<br><br>')
+for (var x = 1; x <= 70; x++){
+	if(x%7==0){
+		document.write(x+' ');	
+	}
+}
+document.write('<br><br>')
+var notes = [6,8,4,9,3,7,5,6,5,7];
+
+var suspesos = 0;
+var aprovats = 0;
+for (x in notes) {
+	if (notes[x] < 5){
+		suspesos++;
+	} else {
+		aprovats++;
+	}
+}
+document.write('Suspesos: '+suspesos+'<br>');
+document.write('Aprovats: '+aprovats);
+document.write('<br><br>')
+
+var altures = [1.70,1.89,1.68,1.76,2.01];
+var sumaltures = 0;
+for (x in altures) {
+	sumaltures += altures[x];
+}
+document.write(sumaltures/5);
+document.write('<br><br>')
+var salaris = [840,1200,600,3200,404];
+var between = 0;
+var more = 0;
+var sumsalaris = 0;
+for (x in salaris){
+	sumsalaris += salaris[x];
+	if (salaris[x] > 1000){
+		more++;
+	} else if (salaris[x] > 500){
+		between++;
+	}
+}
+document.write('Entre 500 i 1000: '+between+'<br>');
+document.write('Mes de 1000: '+more+'<br>');
+document.write('Suma de tots els salaris: '+sumsalaris);
+document.write('<br><br>')
+
+var numeros1 = [3,6,2];
+var numeros2 = [7,3,5];
+
+var sumnumeros1 = 0;
+var sumnumeros2 = 0;
+
+for (x in numeros1){
+	sumnumeros1 += numeros1[x];
+}
+for (x in numeros2){
+	sumnumeros2 += numeros2[x];
+}
+if (sumnumeros1 > sumnumeros2){
+	document.write('Llista 1: '+numeros1[0]+','+numeros1[1]+","+numeros1[2]);
+} else {
+	document.write('Llista 2: '+numeros2[0]+','+numeros2[1]+","+numeros2[2]);
+}
+document.write('<br><br>');
+
+var numeros = [3,6,4,8,9];
+var pars = 0;
+var impars = 0;
+for (x in numeros){
+	if (numeros[x]%2 == 0){
+		pars++;
+	}else{
+		impars++;
+	}
+}
+document.write('Pars: '+pars+'<br>');
+document.write('Impars: '+impars);
+</script>
+</body>
+</html>

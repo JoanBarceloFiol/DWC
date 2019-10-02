@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Activitat 11</title>
+</head>
+<body>
+<script type="text/javascript">
+var num;
+var sum = 0;
+while (num != 9999) {
+	num=prompt('Introdueix un numero:','');
+	num=parseInt(num);
+	if (num != 9999){
+		sum += num	
+	}
+}
+document.write(sum);
+if (num == 0){
+	document.write(" ZERO <br>");
+} else if (num > 0){
+	document.write(" POSITIVE <br>");
+} else {
+	document.write(" NEGATIVE <br>");
+}
+
+var persones = [];
+var id = 1, age = 0, sex = "", name = "";
+
+while (id != 0){
+	id=prompt('ID:','');
+	age=prompt('Age:','');
+	sex=prompt('Sex:','');
+	name=prompt('Name:','');
+	persones.push({id, age, sex, name});
+}
+document.write("<br>");
+document.write("People: "+persones["length"]+" <br>");
+var malecount = 0;
+var femalecount = 0;
+for (x in persones){
+	if (persones[x].sex.toLowerCase() == "male"){
+		malecount++;
+	} else if (persones[x].sex.toLowerCase() == "female"){
+		femalecount++;
+	}
+}
+document.write("Mens: "+malecount+" <br>");
+document.write("Womens: "+femalecount+" <br>");
+
+var count = 0;
+for (x in persones){
+	if (persones[x].sex.toLowerCase() == "male" && persones[x].age >= 18 && persones[x].age <= 65){
+		count++;
+	}
+}
+document.write("Mens between 18 and 65: "+count+" <br>");
+
+var idoldest = 0;
+for (x in persones){
+	if (persones[x].sex.toLowerCase() == "female" && persones[x].age > persones[idoldest].age){
+		idoldest = x;
+	}
+}
+if (femalecount == 0){
+	document.write("Oldest women: No womens founded <br>");
+} else {
+	document.write("Oldest women: "+persones[idoldest].name+" <br>");
+}
+
+var idyoungest = 0;
+for (x in persones){
+	if (persones[x].sex.toLowerCase() == "male" && persones[x].age < persones[idyoungest].age){
+		idyoungest = x;
+	}
+}
+if (malecount == 0){
+	document.write("ID youngest men: No mens founded <br>");
+} else {
+	document.write("ID youngest men: "+persones[idyoungest].id+" <br>");
+}
+
+var accounts = [];
+var id = 1, name = 0, money = 0;
+
+while (id != 0){
+	id=prompt('Account ID:','');
+	name=prompt('Name:','');
+	money=prompt('Balance:','');
+	accounts.push({id, name, money});
+}
+
+var sum = 0;
+for (x in accounts){
+	sum += accounts[x].money
+}
+document.write("<br>");
+document.write("All acounts: "+sum+"&#8364; <br>");
+for (x in accounts){
+	document.write(accounts[x].name+" is the owner of "+accounts[x].id+" account with "+accounts[0].money+" &#8364;.<br>");
+}
+</script>
+</body>
+</html>
