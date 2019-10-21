@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Activitat 9</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<button>Head</button><button>Body</button>
+<script>
+$(document).ready(function(){
+	 $("button").click(function(){
+		 if ($(this).index("button") === 0) {
+			 alert($("head").html());
+			 
+		} else if ($(this).index("button") === 1) {
+			alert($("body").html());
+		}
+	 });
+	});
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Activitat 11</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<table>
+	<tr bgcolor="#00FFFF"><td>Fila 1</td></tr>
+	<tr bgcolor="#00FFFF"><td>Fila 2</td></tr>
+</table>
+<script>
+$(document).ready(function(){
+	 $("tr").mouseover(function(){
+		 $(this).attr("bgcolor", "#FFFF00");
+	 });
+	  $("tr").mouseout(function(){
+		 $(this).attr("bgcolor", "#00FFFF");
+	 });
+	});
+</script>
+</body>
+</html>

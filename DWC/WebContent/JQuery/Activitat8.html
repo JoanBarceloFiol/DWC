@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Activitat 8</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<style>
+.thead {
+  background-color: #f18973;
+}
+.tbody {
+  background-color: #fefbd8;
+}
+</style>
+</head>
+<body>
+<table>
+<thead class="thead">
+<tr>
+<td>thead</td>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr>
+<td>tbody</td>
+</tr>
+</tbody>
+</table>
+<br>
+<button>Unlink thead</button><button>Unlink tbody</button>
+<script>
+$(document).ready(function(){
+	 $("button").click(function(){
+		 switch($(this).text()) {
+		  case "Unlink thead":
+			  $(this).text("Link thead");
+			  $("table:eq(0) thead").removeClass("thead");
+		    break;
+		  case "Link thead":
+			  $(this).text("Unlink thead");
+			  $("table:eq(0) thead").addClass("thead");
+		    break;
+		  case "Unlink tbody":
+			  $(this).text("Link tbody");
+			  $("table:eq(0) tbody").removeClass("tbody");
+		    break;
+		  case "Link tbody":
+			  $(this).text("Unlink tbody");
+			  $("table:eq(0) tbody").addClass("tbody");
+		    break;
+		}
+	 });
+	});
+</script>
+</body>
+</html>

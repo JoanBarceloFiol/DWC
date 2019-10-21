@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Activitat 2</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<table>
+<tr><td>fila 1</td></tr>
+<tr><td>fila 2</td></tr>
+</table>
+<script>
+$(document).ready(function(){
+	 $("table:eq(0) tr").click(function(){
+		 if ($(this).index("tr") === 0){
+			 $(this).css("background-color","#ffff00");
+		 } else {
+			 $(this).css("background-color","#0000ff"); 
+		 }
+	 });
+	}); 
+</script>
+</body>
+</html>

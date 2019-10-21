@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Activitat 5</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<h1>Titol 1</h1>
+<p>Paragraf 1</p>
+<h1>Titol 2</h1>
+<p>Paragraf 2</p>
+<h1>Titol 3</h1>
+<p>Paragraf 3</p>
+<h1>Titol 4</h1>
+<p>Paragraf 4</p>
+<h1>Titol 5</h1>
+<p>Paragraf 5</p>
+<button>small</button>
+<button>medium</button>
+<button>big</button>
+<script>
+$(document).ready(function(){
+	 $("button").click(function(){
+		 if ($(this).index("button") === 0){
+			 $("p:odd").css("font-size","10px");
+		 } else if ($(this).index("button") === 1){
+			 $("p:odd").css("font-size","20px");
+		 } else if ($(this).index("button") === 2){
+			 $("p:odd").css("font-size","30px");
+		 }
+	 });
+	}); 
+</script>
+</body>
+</html>

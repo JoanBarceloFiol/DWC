@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Activitat 6</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<table>
+<tr><td>OFF</td><td>OFF</td><td>OFF</td></tr>
+<tr><td>OFF</td><td>OFF</td><td>OFF</td></tr>
+<tr><td>OFF</td><td>OFF</td><td>OFF</td></tr>
+</table>
+<br>
+<table>
+<tr><td>OFF</td><td>OFF</td><td>OFF</td></tr>
+<tr><td>OFF</td><td>OFF</td><td>OFF</td></tr>
+<tr><td>OFF</td><td>OFF</td><td>OFF</td></tr>
+</table>
+<br>
+<button>Clic aqui</button>
+<script>
+$(document).ready(function(){
+	 $("button").click(function(){
+		 $("table:eq(0) td").text("ON");
+	 });
+	});
+</script>
+</body>
+</html>
